@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     default: "StudyForge - Build Your Academic Success | AI Study Tools & Flashcards",
     template: "%s | StudyForge",
   },
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
   description:
     "StudyForge helps students build academic excellence through AI-powered flashcards, intelligent quiz generation, and comprehensive study planning. Forge your path to success.",
   keywords: [

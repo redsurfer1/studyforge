@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Hammer } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -40,9 +41,9 @@ function Header() {
           <motion.div
             whileHover={{ rotate: [0, -15, 15, -15, 0] }}
             transition={{ duration: 0.5 }}
-            className="flex h-11 w-11 items-center justify-center rounded-lg border-2 border-green-600 bg-gradient-to-br from-green-600 to-emerald-500 shadow-md"
+            className="flex h-11 w-11 items-center justify-center rounded-lg border-2"
           >
-            <Hammer className="h-6 w-6 text-white" />
+            <Image src="/logo.png" alt="StudyForge Logo" width={50} height={50} />
           </motion.div>
           <span className="text-2xl font-black tracking-tight text-foreground">StudyForge</span>
         </Link>

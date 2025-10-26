@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Hammer } from "lucide-react"
+import Image from "next/image"
 
 function Footer() {
   const footerSections = [
@@ -36,8 +37,8 @@ function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="mb-6 flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-lg border-2 border-green-600 bg-gradient-to-br from-green-600 to-emerald-500 shadow-md">
-                <Hammer className="h-6 w-6 text-white" />
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg border-2">
+                <Image src="/logo.png" alt="StudyForge Logo" width={50} height={50} />
               </div>
               <span className="text-2xl font-black tracking-tight text-foreground">StudyForge</span>
             </Link>

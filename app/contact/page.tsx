@@ -104,6 +104,14 @@ export default function ContactPage() {
               </div>
               <h3 className="font-black mb-2 uppercase">Ticket System</h3>
               <p className="text-sm text-muted-foreground font-medium">Track your inquiry</p>
+              <Button
+              className="mt-4 w-full border-2 border-green-400 cursor-pointer"
+              variant="secondary"
+              onClick={() => window.location.href = "/support"}
+              
+            >
+              My Ticket
+            </Button>
             </Card>
           </div>
 
